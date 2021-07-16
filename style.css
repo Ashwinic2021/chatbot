@@ -1,0 +1,421 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+main {
+  background-color: #000;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.chat-box {
+  background-color: rgb(255, 255, 255);
+  min-height: 90vh;
+  width: 30%;
+  border-radius: 2rem;
+}
+
+.upper-box {
+  background: linear-gradient(to left, #fa6d0e, #f67d1b);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  min-height: 40vh;
+  animation: fadeIn linear 5s;
+}
+
+.lower-box {
+  background-color: #fff;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  position: relative;
+  justify-content: center;
+  animation: fadeIn linear 11s;
+}
+
+.lower-chat-box {
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -90px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 0.5rem;
+  height: 410px;
+  width: 90%;
+}
+
+.card-content {
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.card-content i {
+  font-size: 7px;
+}
+
+h2 {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 13px;
+  color: #000;
+  font-weight: 600;
+}
+
+p {
+  font-size: 13px;
+  color: #616161;
+  margin-left: 5px;
+  margin-top: 12px;
+}
+
+.chat-title {
+  margin-left: 20px;
+  color: #fff;
+  padding: 40px;
+  animation: fadeIn linear 7s;
+}
+
+i {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #ff8d2b;
+  border: 2px solid #ffead9;
+  border-radius: 50%;
+}
+
+span {
+  font-size: 30px;
+  position: relative;
+  top: -110px;
+  left: 16px;
+  color: #fff;
+  animation: fadeIn linear 7s;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ff6d00;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: -60px;
+  animation: fadeIn linear 7s;
+}
+
+.help-container {
+  position: relative;
+  top: -65px;
+}
+
+.last-section {
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 3px 3px 0 rgba(117, 114, 114, 0.3);
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 38px;
+  animation: fadeIn linear 21s;
+}
+
+.last-section p {
+  color: #000;
+}
+
+.last-section i {
+  border: none;
+  margin-right: 5px;
+  color: #000;
+}
+
+.box-1 {
+  animation: fadeIn linear 13s;
+}
+
+.box-2 {
+  animation: fadeIn linear 15s;
+}
+
+.box-3 {
+  animation: fadeIn linear 17s;
+}
+
+.box-4 {
+  animation: fadeIn linear 19s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+
+/* media query */
+
+@media (min-width: 999px) and (max-width: 1440px) {
+  .chat-box {
+    width: 30%;
+  }
+
+  .lower-chat-box {
+    top: -90px;
+    height: 450px;
+    width: 93%;
+  }
+
+  .help-container {
+    top: -75px;
+  }
+  .card-content {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .last-section {
+    width: 250px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .lower-chat-box {
+    top: -75px;
+    padding: 25px;
+    height: 370px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 998px) {
+  .chat-box {
+    width: 40%;
+  }
+
+  .lower-chat-box {
+    top: -60px;
+    height: 330px;
+    width: 92%;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  h6 {
+    font-size: 11px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  .help-container {
+    top: -75px;
+  }
+  .card-content {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .last-section {
+    width: 250px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .lower-chat-box {
+    top: -75px;
+    padding: 25px;
+    height: 370px;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 767.98px) {
+  .chat-box {
+    width: 50%;
+  }
+
+  .lower-chat-box {
+    top: -60px;
+    height: 350px;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+  h5 {
+    font-size: 13px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .help-container {
+    top: -76px;
+  }
+  .card-content {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .last-section {
+    width: 250px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .lower-chat-box {
+    top: -90px;
+    padding: 35px;
+    border-radius: 0.5rem;
+    height: 360px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 579px) {
+  .chat-box {
+    width: 80%;
+  }
+
+  .lower-chat-box {
+    position: absolute;
+    top: -75px;
+    height: 350px;
+    width: 93%;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 13px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .help-container {
+    top: -76px;
+  }
+  .card-content {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .last-section {
+    width: 250px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .lower-chat-box {
+    top: -90px;
+    padding: 35px;
+    border-radius: 0.5rem;
+    height: 360px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  .chat-box {
+    width: 90%;
+  }
+
+  .lower-chat-box {
+    top: -60px;
+    height: 330px;
+    width: 92%;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 11px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 9px;
+  }
+
+  .help-container {
+    top: -76px;
+  }
+  .card-content {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .last-section {
+    width: 250px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .lower-chat-box {
+    top: -90px;
+    padding: 35px;
+    border-radius: 0.5rem;
+    height: 360px;
+  }
+}
